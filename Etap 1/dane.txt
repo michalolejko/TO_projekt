@@ -1,0 +1,20 @@
+Temat nr 1:
+Emulacja programowania obiektowego w językach nieobiektowych np. C
+
+Michał Olejko
+michalolejko3@wp.pl
+2ID21B
+
+Windows, język C
+
+
+Temat pracy inżynierskiej:
+'Opracowanie i implementacja aplikacji internetowej służącej do harmonizowania prostych melodii.'
+
+Temat projektu "Programowanie systemów rozproszonych":
+Sieciowa gra Memory 
+'Pamięciowa gra polegająca na znajdowaniu par identycznych obrazków, przy założeniu, 
+że przy swojej kolejce możemy odkryć maksymalnie dwa obrazki.' 
+
+Temat pracy magisterskiej nie jest jeszcze znany.
+
