@@ -1,0 +1,56 @@
+1. Emulacja programowania obiektowego w językach nieobiektowych np. C
+______________________________________________________________________
+Michał Olejko
+gr 2ID21B
+______________________________________________________________________
+Co zostało zrealizowane na drugi etap?
+
+Stworzono prostą imitację obiektu (Point w Point.h) za pomocą struktury, 
+w którejzawarto dwie zmienne int (x i y) oraz cztery wskaźniki na funkcje
+typu setter i getter (setX, setY, getX, getY). Ciała funkcji zostały
+zdefiniowane poza strukturą i nie występuje tu alokacja oraz zwalnianie
+pamięci. Dodatkowo zaimplementowano metodę constructor, która przypisuje
+wskaźnikom ww. odpowiednie funkcje. 
+Utworzono plik "Object.h" w którym zostały rozpoczęte prace w zakresie
+etapu trzeciego.
+Poza pracą nad projektem zmieniono nazwę folderu na serwerze git z 
+"Etap 1" na "Etap_1", a w pliku "dane.txt" uzupełniono harmonogram.
+______________________________________________________________________
+Co będzie realizowane na trzeci etap?
+
+W kolejnym etapie zostaną rozpoczęte prace nad alokacją i zwalnianiem
+pamięci przy tworzeniu i usuwaniu obiektów za pomocą metod new() oraz
+delete(). 
+______________________________________________________________________
+Problemy, które wystąpiły przy pracy:
+
+1. Jak zawrzeć funkcje wewnątrz struktury - rozwiązano za pomocą
+wskaźników do funkcji poza strukturą.
+
+2. Jak stworzyć konstruktor, który będzie inicjalizował wszystkie 
+funkcje obiektu? (pomocna może być bibliotek stdarg.h)
+
+3. Jak zlikwidować ręczne pisanie wskaźników do funkcji wewnątrz
+struktury? 
+
+4. Jak zlikwidować przekazywanie wskaźnika na "obiekt" do każdej z 
+zaimplementowanych metody (funkcji)?
+
+______________________________________________________________________
+Statystyki dotyczące kodu źródłowego:
+
+nowy plik- Point.h = 32 wiersze - 526 B
+nowy plik- Object.h = 50 wierszy - 1 126 B
+edytowano plik - main.c, teraz posiada 24 wiersze - 588 B
+
+w main.c usunięto printf("Hello World!"); i zastąpiono prezentacją
+dwóch 'obiektów' 'klasy' Point.
+
+______________________________________________________________________
+Statystyki dotyczące plików tekstowych:
+
+dodano 1 plik - raport.txt do folderu Etap_2 
+ok. 2.3kB, liczba znaków: 2293
+
+edytowano 1 plik - dane.txt z folderu Etap_1
+teraz posiada 1239 znaków

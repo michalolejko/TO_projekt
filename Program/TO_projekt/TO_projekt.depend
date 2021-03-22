@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1616404302 source:c:\users\micha許desktop\studia\zapiski\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\main.c
+	<stdio.h>
+	"Object.h"
+	"Point.h"
+
+1616406660 c:\users\micha許desktop\studia\zapiski\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\object.h
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+	<setjmp.h>
+	<stddef.h>
+	<string.h>
+
+1616353919 source:c:\users\micha許desktop\studia\zapiski\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\point.c
+
+1616407826 c:\users\micha許desktop\studia\zapiski\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\point.h
+

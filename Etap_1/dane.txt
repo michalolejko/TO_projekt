@@ -1,0 +1,41 @@
+Temat projektu:
+
+1. Emulacja programowania obiektowego w językach nieobiektowych np. C
+
+______________________________________________________________________
+Nazwiska, imiona, adresy mailowe oraz numery grup członków zespołu:
+
+Michał Olejko
+michalolejko3@wp.pl
+gr 2ID21B
+
+______________________________________________________________________
+	Spis technologii:
+
+Windows, język C
+
+______________________________________________________________________
+	Harmonogram i funkcjonalność:
+
+1. Tworzenie i usuwanie obiektów
+2. Metody, przeciążenia i przesłanianie
+3. Wprowadzenie mechanizmu dziedziczenia
+4. Wprowadzenie hermetyzacji
+
+5. Abstrakcyjne metody i klasy
+6. Pola i metody statyczne
+7. Typy generyczne
+8. Przestrzenie nazw/pakiety
+
+______________________________________________________________________
+	Tematy innych projektów:
+
+	Temat pracy inżynierskiej:
+'Opracowanie i implementacja aplikacji internetowej służącej do harmonizowania prostych melodii.'
+
+	Temat projektu "Programowanie systemów rozproszonych":
+Sieciowa gra Memory 
+'Pamięciowa gra polegająca na znajdowaniu par identycznych obrazków, przy założeniu, 
+że przy swojej kolejce możemy odkryć maksymalnie dwa obrazki.' 
+
+	Temat pracy magisterskiej nie jest jeszcze znany.
