@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1616404302 source:c:\users\micha許desktop\studia\zapiski\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\main.c
+1616594741 source:c:\users\micha許desktop\studia\zapiski\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\main.c
 	<stdio.h>
 	"Object.h"
 	"Point.h"
 
-1616406660 c:\users\micha許desktop\studia\zapiski\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\object.h
+1616594736 c:\users\micha許desktop\studia\zapiski\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\object.h
 	<stdarg.h>
 	<stdio.h>
 	<stdlib.h>
@@ -15,5 +15,35 @@
 
 1616353919 source:c:\users\micha許desktop\studia\zapiski\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\point.c
 
-1616407826 c:\users\micha許desktop\studia\zapiski\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\point.h
+1616413421 c:\users\micha許desktop\studia\zapiski\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\point.h
+
+1616953291 source:c:\users\micha許desktop\studia\zapiski\pi靖ek\technologie obiektowe\to_projekt\main.c
+	<stdio.h>
+	"Object.h"
+	"Point.h"
+
+1616952575 c:\users\micha許desktop\studia\zapiski\pi靖ek\technologie obiektowe\to_projekt\object.h
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+	<setjmp.h>
+	<stddef.h>
+	<string.h>
+
+1616952898 c:\users\micha許desktop\studia\zapiski\pi靖ek\technologie obiektowe\to_projekt\point.h
+
+1617007002 source:c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to_projekt\main.c
+	<stdio.h>
+	"Point.h"
+
+1616952898 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to_projekt\point.h
+
+1617008152 source:c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\main.c
+	<stdio.h>
+	"Point2.h"
+
+1617007148 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\point.h
+
+1617008212 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\point2.h
 

@@ -1,0 +1,15 @@
+1. Emulacja programowania obiektowego w językach nieobiektowych np. C
+______________________________________________________________________
+Michał Olejko
+gr 2ID21B
+______________________________________________________________________
+Co zostało zrealizowane na trzeci etap?
+
+Zgłębiono wiedzę na temat obiektowości w języku C.
+Utworzono plik .doc zawierający wstęp teoretyczny do tematu projektu.
+______________________________________________________________________
+Co będzie realizowane na czwarty etap?
+
+W kolejnym etapie zostaną rozpoczęte prace nad alokacją i zwalnianiem
+pamięci przy tworzeniu i usuwaniu obiektów za pomocą metod new() oraz
+delete(). 

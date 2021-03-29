@@ -10,9 +10,8 @@
 #include<setjmp.h>
 #include<stddef.h>
 #include<string.h>
-
 typedef struct Class Class;
-struct Class {
+typedef struct Class {
     size_t size;
     void * (* constructor) (void * self, va_list * app);
     void * (* destructor) (void * self);
@@ -22,17 +21,17 @@ struct Class {
 void * new (const void * _class, ...)
 {
     const struct Class * class = _class;
-    void * p = calloc(1, class -> size);
-    assert(p);
-    * (const struct Class **) p = class;
+    void * ptr = calloc(1, class -> size);
+    assert(ptr);
+    * (const struct Class **) ptr = class;
     if(class -> constructor)
     {
         va_list ap;
         va_start(ap, _class);
-        p = class -> constructor(p, &ap);
+        ptr = class -> constructor(ptr, &ap);
         va_end(ap);
     }
-    return p;
+    return ptr;
 }
 
 void delete (void * self)
@@ -40,11 +39,4 @@ void delete (void * self)
     if (self && * cp && (* cp) -> destructor)
         self = (* cp) -> destructor(self);
     free(self);
-}
-
-size_t sizeOf (const void * self)
-{
-    const struct Class * const * cp = self;
-    assert(self && * cp);
-    return (* cp) -> size;
 }
