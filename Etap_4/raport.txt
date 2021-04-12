@@ -1,0 +1,25 @@
+1. Emulacja programowania obiektowego w językach nieobiektowych np. C
+______________________________________________________________________
+Michał Olejko
+gr 2ID21B
+______________________________________________________________________
+Co zostało zrealizowane na trzeci etap?
+
+1. Pogłebiono wiedzę na temat realizowanego projektu. 
+2. Zrealizowano uproszczone tworzenie obiektu za pomocą alokowania pamięci
+funkcją malloc() i usuwanie obiektu zwalniając pamięć za pomocą free().
+3. Stworzono dziedziczenie obiektów poprzez umieszczenie struktury klasy 
+nadrzędnej w klasie pochodnej i nazwano te zmienną podobnie do języka
+Java - super.
+4. Zrealizowano rzutowanie w górę oraz w dół przy pomocy konstruktorów.
+5. Abstrakcyjne metody są realizowane za pomocą wskaźników do funkcji,
+których realnie nie ma w strukturze - nie jest to możliwe w języku C.
+
+Oraz zaprezentowano to w programie (wywołanie znajduje się w funkcji
+main()).
+
+______________________________________________________________________
+Co będzie realizowane na czwarty etap?
+
+W kolejnym etapie zostaną rozpoczęte prace nad hermetyzacją metod i 
+zmiennych. 

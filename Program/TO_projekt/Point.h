@@ -22,11 +22,4 @@ void setY(Point* inst, int y){
 int getY(Point* inst){
     return inst->y;
 }
-/*
-void constructor(Point* inst){
-    inst->setX = setX;
-    inst->getX = getX;
-    inst->setY = setY;
-    inst->getY = getY;
-}
-*/
+
