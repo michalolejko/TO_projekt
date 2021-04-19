@@ -10,6 +10,35 @@
 #include<setjmp.h>
 #include<stddef.h>
 #include<string.h>
+
+typedef struct Object Object;
+typedef struct Object {
+    size_t size;
+    void* (*new) (void*)
+    /*void * (* constructor) (void * self, va_list * app);
+    void * (* destructor) (void * self);
+    int * (* clone) (const void * self);*/
+};
+
+void * new(void* _class)
+{
+    struct Object
+
+    const struct Class * this = _class;
+    void * ptr = calloc(1, this -> size);
+    assert(ptr);
+    * (const struct Class **) ptr = this;
+    if(this -> constructor)
+    {
+        va_list ap;
+        va_start(ap, _class);
+        ptr = this -> constructor(ptr, &ap);
+        va_end(ap);
+    }
+    return ptr;
+}
+
+/*
 typedef struct Class Class;
 typedef struct Class {
     size_t size;
@@ -18,17 +47,18 @@ typedef struct Class {
     int * (* clone) (const void * self);
 };
 
+
 void * new (const void * _class, ...)
 {
-    const struct Class * class = _class;
-    void * ptr = calloc(1, class -> size);
+    const struct Class * this = _class;
+    void * ptr = calloc(1, this -> size);
     assert(ptr);
-    * (const struct Class **) ptr = class;
-    if(class -> constructor)
+    * (const struct Class **) ptr = this;
+    if(this -> constructor)
     {
         va_list ap;
         va_start(ap, _class);
-        ptr = class -> constructor(ptr, &ap);
+        ptr = this -> constructor(ptr, &ap);
         va_end(ap);
     }
     return ptr;
@@ -40,3 +70,5 @@ void delete (void * self)
         self = (* cp) -> destructor(self);
     free(self);
 }
+*/
+

@@ -31,16 +31,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="ChildClass.h">
+		<Unit filename="Czlowiek.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Czlowiek.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="Class.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="Object.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="Point.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

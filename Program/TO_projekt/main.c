@@ -1,39 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
-//#include "Object.h"
-//#include "Point.h"
-#include "Class.h"
-#include "ChildClass.h"
-/*
-void pointPrezentacja()
-{
-    //Point.h
-    //Pierwsza wersja - tworzenie obiektow bez alokacji pamieci
-    //bazujac na strukturze, gdzie wywolywanie metody
-    //polega na przekazywaniu jej wskaznika na 'obiekt'
-    struct Point p1, p2;
-
-    puts("Metoda 1:\n");
-    setX(&p1, 1);
-    setX(&p2, 2);
-    setY(&p1, 10);
-    setY(&p2, 20);
-    printf("p1(1,10), p2(2,20)\n");
-    printf("x1=%d, y1=%d\n", getX(&p1), getY(&p1));
-    printf("x2=%d, y2=%d\n\n", getX(&p2), getY(&p2));
-
-    setX(&p1, getX(&p2));
-    setY(&p1, getY(&p2));
-    printf("p1(getX(&p2),getY(&p2))\n");
-    printf("x1=%d, y1=%d\n", getX(&p1), getY(&p1));
-}
-*/
-
+#include "Czlowiek.h"
 
 int main()
 {
-    //pointPrezentacja();
+    Czlowiek *kowalski = Czlowiek_cstr("Jan Kowalski", 24, 'm');
+    przedstawSie(kowalski);
+    zrobUrodziny(kowalski);
+    //dodajRok(kowalski); //metoda prywatna
+    przedstawSie(kowalski);
+    free(kowalski);
 
+    //pointPrezentacja();
+    //12.04
+    /*
     ///Tworzenie obiektu (a)
     puts("Obiekt:");
     Class *object = Class_cstr(32); //tworzenie obiektu
@@ -67,7 +47,7 @@ int main()
     setY(object3, 64);
     printf("\nRzutowany obiekt y: %d", getY(object3));
     free(object3); //usuwanie obiektu
-
+    */
     return 0;
 }
 
