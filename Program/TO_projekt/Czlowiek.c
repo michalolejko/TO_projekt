@@ -15,7 +15,7 @@ Czlowiek* Czlowiek_cstr(char* nazwisko, unsigned int wiek, char plec){
 
 //Metoda publiczna
 /*public*/void zrobUrodziny(Czlowiek* inst){
-    printf("Mam dzis urodziny.\n");
+    printf("%s: Mam dzis urodziny.\n", inst->nazwisko);
     dodajRok(inst);
 }
 

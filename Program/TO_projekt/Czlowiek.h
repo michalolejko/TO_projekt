@@ -12,6 +12,7 @@ struct Czlowiek
     void (*przedstawSie)(Czlowiek*);
     void (*zrobUrodziny) (Czlowiek*);
 };
+
 static void dodajRok();
 
 #endif // CZLOWIEK_H_INCLUDED
