@@ -1,0 +1,20 @@
+1. Emulacja programowania obiektowego w językach nieobiektowych np. C
+______________________________________________________________________
+Michał Olejko
+gr 2ID21B
+______________________________________________________________________
+Co zostało zrealizowane na ten etap?
+
+1. Zgłębiono wiedzę teoretyczną na temat projektu.
+2. Poprawiono emitację obsługi zdarzeń w sposób obiektowy:
+	W osobnej strukturze tworzony jest pewnego rodzaju interfejs, a
+	w osobnej strukturze definiuje się w unii klasę bazową (tutaj
+	zdarzenie) oraz klasę dziedziczącą, co umożliwia połączenie
+	cech i funkcji tworząc nową klasę.
+
+______________________________________________________________________
+
+
+
+
+ 
