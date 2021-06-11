@@ -1,18 +1,16 @@
 #ifndef CZLOWIEK_H_INCLUDED
 #define CZLOWIEK_H_INCLUDED
 
-typedef struct Czlowiek Czlowiek;
-struct Czlowiek
+typedef struct Czlowiek_public
 {
-    void * (*Czlowiek_cstr) (Czlowiek*, char*, unsigned int, char);
-    struct Czlowiek * this;
-    char* nazwisko;
+    char* imie;
     unsigned int wiek;
-    char plec;
-    void (*przedstawSie)(Czlowiek*);
-    void (*zrobUrodziny) (Czlowiek*);
-};
+}Czlowiek_public;
 
-static void dodajRok();
+/*//protected - bez 'static' "multiple definition of setImie"
+void setImie(Czlowiek_public*inst, char* imie)
+{
+    inst->imie = imie;
+}*/
 
 #endif // CZLOWIEK_H_INCLUDED
