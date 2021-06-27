@@ -8,4 +8,4 @@ typedef struct Student
 }Student;
 
 #endif // STUDENT_H_INCLUDED
-//#ifdef NAZWAKLASY #definenazwaMetodyNadrzêdnej(x)nazwaMetodyPoddrzêdnej(x)#endif
+

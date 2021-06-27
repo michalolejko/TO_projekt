@@ -11,7 +11,7 @@ unsigned long pesel;
 //public
 typedef struct Czlowiek
 {
-    struct Czlowiek*this;
+    struct Czlowiek*this; //mogloby byc w "Object.h"
     char* imie;
     unsigned int wiek;
     void* (*getImie)(struct Czlowiek*this);

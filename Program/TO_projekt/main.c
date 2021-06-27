@@ -3,6 +3,7 @@
 #include <string.h>
 #include "Czlowiek.h"
 #include "Student.c"
+#include "Pracownik.c"
 
 //PRZECI¥¯ENIE-----------------------------------------------------------------
 int addi(int a, int b) {
@@ -52,7 +53,15 @@ int main()
 
     //-----------------------------------------------------------------------------
 
-    //przeci¹¿enie (_Generic):
+    //override
+    Pracownik *pracownik = (Pracownik*)Pracownik_cstr("Pracownik", 2500);
+    printf("%s, wynagrodzenie: %d\n", (char*)pracownik->getImie(pracownik), pracownik->wynagrodzenie);
+    free(pracownik);
+    printf("____________________________________________________\n");
+
+    //- - - -
+
+    //przeci¹¿enie (_Generic) (overload):
     int a = 1, b = 2;
     char *c = "hello ", *d = "world";
     double e = 3, f = 4;

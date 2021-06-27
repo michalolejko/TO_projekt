@@ -1,0 +1,6 @@
+#ifndef ABSTRACT_H_INCLUDED
+#define ABSTRACT_H_INCLUDED
+
+
+
+#endif // ABSTRACT_H_INCLUDED
