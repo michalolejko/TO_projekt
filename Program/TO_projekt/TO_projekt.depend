@@ -39,27 +39,25 @@
 
 1616952898 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to_projekt\point.h
 
-1622447000 source:c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\main.c
+1624809937 source:c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\main.c
 	<stdio.h>
 	<stdlib.h>
-	"Czlowiek.c"
+	"Czlowiek.h"
 	"Student.c"
 
-1622447049 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\czlowiek.c
+1624808584 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\czlowiek.c
 	"Czlowiek.h"
-	<stdio.h>
 	<stdlib.h>
 
-1622447042 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\czlowiek.h
+1624809976 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\czlowiek.h
 
-1622447049 source:c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\czlowiek.c
+1624809976 source:c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\czlowiek.c
 	"Czlowiek.h"
-	<stdio.h>
 	<stdlib.h>
 
-1621852314 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\student.c
+1623390868 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\student.c
 	"Czlowiek.h"
 	"Student.h"
 
-1621837015 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\student.h
+1623391120 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\student.h
 

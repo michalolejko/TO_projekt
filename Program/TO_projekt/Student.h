@@ -1,9 +1,11 @@
 #ifndef STUDENT_H_INCLUDED
 #define STUDENT_H_INCLUDED
 
-typedef struct Student_public
+typedef struct Student
 {
+    struct Czlowiek;
     unsigned int rok;
-}Student_public;
+}Student;
 
 #endif // STUDENT_H_INCLUDED
+//#ifdef NAZWAKLASY #definenazwaMetodyNadrzêdnej(x)nazwaMetodyPoddrzêdnej(x)#endif

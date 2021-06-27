@@ -1,8 +1,9 @@
 #include "Czlowiek.h"
 #include "Student.h"
-
-typedef struct Student
+/*
+struct Student
 {
-    Czlowiek_public;
-    Student_public;
+    struct Czlowiek;
+    struct Student_public;
 } Student;
+*/

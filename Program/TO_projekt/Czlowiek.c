@@ -1,38 +1,35 @@
 #include "Czlowiek.h"
-#include <stdio.h>
 #include <stdlib.h>
 
-typedef struct Czlowiek
-{
-    Czlowiek_public;
-} Czlowiek;
+
+//public
+Czlowiek* Czlowiek_cstr(char* imie, unsigned int wiek){
+    struct Czlowiek* inst = malloc(sizeof*inst);
+    inst->this = inst;
+    inst->imie = imie;
+    inst->wiek = wiek;
+    inst->getImie = czlowiek_getImie;
+    inst->setPesel = czlowiek_setPesel;
+    inst->getPesel = czlowiek_getPesel;
+    return inst;
+}
 
 
-static void metodaChroniona()
+
+//public
+unsigned long czlowiek_getPesel()
 {
-    printf("Wywolano metode prywatna\n");
+    return pesel;
 }
 
 //public
-static char* getImie(Czlowiek *inst)
+void czlowiek_setPesel(unsigned long nowyPesel)
 {
-    return inst->imie;
+    pesel = nowyPesel;
 }
 
-
-
-
-
-
-
-
-
-
-static Czlowiek* Czlowiek_cstr(Czlowiek *inst, char* imie, unsigned int wiek){
-    /*struct Czlowiek* this = malloc(sizeof*inst);
-    inst = this;*/
-    inst->imie = imie;
-    inst->wiek = wiek;
-    //inst->plec=plec;
-    return inst;
+//public
+char* czlowiek_getImie(struct Czlowiek *inst)
+{
+    return inst->imie;
 }
