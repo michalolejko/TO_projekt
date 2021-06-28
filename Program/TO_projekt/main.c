@@ -1,74 +1,93 @@
 #include <stdio.h>
 #include <stdlib.h>
-//#include "Object.h"
-//#include "Point.h"
-#include "Class.h"
-#include "ChildClass.h"
-/*
-void pointPrezentacja()
-{
-    //Point.h
-    //Pierwsza wersja - tworzenie obiektow bez alokacji pamieci
-    //bazujac na strukturze, gdzie wywolywanie metody
-    //polega na przekazywaniu jej wskaznika na 'obiekt'
-    struct Point p1, p2;
+#include <string.h>
+#include "Czlowiek.h"
+#include "Student.c"
+#include "Pracownik.c"
+#include "AbstractTest.c"
 
-    puts("Metoda 1:\n");
-    setX(&p1, 1);
-    setX(&p2, 2);
-    setY(&p1, 10);
-    setY(&p2, 20);
-    printf("p1(1,10), p2(2,20)\n");
-    printf("x1=%d, y1=%d\n", getX(&p1), getY(&p1));
-    printf("x2=%d, y2=%d\n\n", getX(&p2), getY(&p2));
-
-    setX(&p1, getX(&p2));
-    setY(&p1, getY(&p2));
-    printf("p1(getX(&p2),getY(&p2))\n");
-    printf("x1=%d, y1=%d\n", getX(&p1), getY(&p1));
+//PRZECI¥¯ENIE-----------------------------------------------------------------
+int addi(int a, int b) {
+    return a + b;
 }
-*/
 
+char *adds(char *a, char *b) {
+    char *res = malloc(strlen(a) + strlen(b) + 1);
+    strcpy(res, a);
+    strcat(res, b);
+    return res;
+}
+
+double addd(double a, double b){
+    return a + b;
+}
+
+//_Generic - od C11
+#define add(a, b) _Generic(a, int: addi, char*: adds, double: addd)(a, b)
+//-----------------------------------------------------------------------------
 
 int main()
 {
-    //pointPrezentacja();
+    //tworzenie obiektu
+    Czlowiek *czlowiek = (Czlowiek*)Czlowiek_cstr("Jan", 10);
+    //pole publiczne[wiek]
+    czlowiek->wiek = 16;
+    //getImie to metoda publiczna
+    printf("%s, lat %d\n", (char*)czlowiek->getImie(czlowiek), czlowiek->wiek);
+    czlowiek->setPesel(123456789); //mo¿na zmieniæ na char*
+    printf("pesel: %ld\n", (unsigned long)czlowiek->getPesel());
+    //usuwanie obiektu:
+    free(czlowiek);
+    printf("____________________________________________________\n");
 
-    ///Tworzenie obiektu (a)
-    puts("Obiekt:");
-    Class *object = Class_cstr(32); //tworzenie obiektu
-    printf("object x: %d\n", getX(object)); //pobieranie funkcja get
-    setX(object, 64); //ustawianie setterem
-    printf("object x po setterze:%d\n", getX(object)); //pobieranie getterem
+    //-----------------------------------------------------------------------------
 
-    ///Usuwanie obiektu (a)
-    free(object);
+    //tworzenie obiektu dziedziczacego (RZUTOWANIE W DOL)
+    Student *student= (Student*)Czlowiek_cstr("Student Jan", 26);
+    student->rok = 1;
+    //protected
+    student->setPesel(987643210);
+    printf("pesel: %ld\n", (unsigned long)czlowiek->getPesel());
+    printf("student %d roku, %s, lat %d\n", student->rok, (char*)student->getImie((Czlowiek*)student), student->wiek);
+    free(student);
+    printf("____________________________________________________\n");
 
+    //-----------------------------------------------------------------------------
 
-    puts("\nDziedziczacy obiekt - konstruktor x:96, y:128, a potem set 164 i 256:");
-    ///Dziedziczenie obiektu (b)
-    ChildClass *childObject = ChildClass_cstr(96,128); //tworzenie dziedziczacego obiektu
-    printf("x: %d, y: %d\n", getX(childObject), getY(childObject)); //pobieranie funkcja get
-    setX(childObject, 164);
-    setY(childObject, 256);
-    printf("x: %d, y: %d\n", getX(childObject), getY(childObject));
-    free(childObject); //usuwanie obiektu
+    //override
+    Pracownik *pracownik = (Pracownik*)Pracownik_cstr("Pracownik", 2500);
+    printf("%s, wynagrodzenie: %d\n", (char*)pracownik->getImie(pracownik), pracownik->wynagrodzenie);
+    free(pracownik);
+    printf("____________________________________________________\n");
 
+    //- - - -
 
-    ///Rzutowanie obiektu (b)
-    puts("\nTworze obiekt typu Class, za pomoca konstruktora ChildClass(32,64):");
-    Class *object2 = ChildClass_cstr(32, 64);
-    printf("Rzutowany obiekt x: %d", getX(object2));
-    printf("\nRzutowany obiekt y: %d", getY(object2));
-    free(object2); //usuwanie obiektu
-    puts("\nTworze obiekt typu ChildClass, za pomoca konstruktora Class(32) i setY(64):");
-    ChildClass *object3 = Class_cstr(32);
-    printf("Rzutowany obiekt x: %d", getX(object3));
-    setY(object3, 64);
-    printf("\nRzutowany obiekt y: %d", getY(object3));
-    free(object3); //usuwanie obiektu
+    //przeci¹¿enie (_Generic) (overload):
+    int a = 1, b = 2;
+    char *c = "hello ", *d = "world";
+    double e = 3, f = 4;
+    printf("int:\t%d\n", add(a, b)); // 3
+    printf("char*:\t%s\n", add(c, d)); // hello world
+    printf("double:\t%lf\n", add(e,f)); // 7
 
+    //-----------------------------------------------------------------------------
+
+    //uzycie metody i klasy abstrakcyjnej:
+    AbstractTest *at = (AbstractTest*)AbstractTest_cstr();
+    at->abstractMethod();
+    free(at);
+
+    //-----------------------------------------------------------------------------
+
+   /*Czlowiek *czlowiek1 = (Czlowiek*)Czlowiek_cstr("czlowiek1", 1);
+    Czlowiek *czlowiek2 = (Czlowiek*)Czlowiek_cstr("czlowiek2", 2);
+    czlowiek1->staticTest = 10;
+    czlowiek2->staticTest = 20;
+    printf("\nczlowiek1->staticTest = %d,", czlowiek1->staticTest);
+    printf("\nczlowiek2->staticTest = %d,\n", czlowiek2->staticTest);
+    free(czlowiek1);
+    free(czlowiek2);*/
+
+    //-----------------------------------------------------------------------------
     return 0;
 }
-
-

@@ -1,0 +1,80 @@
+1. Emulacja programowania obiektowego w językach nieobiektowych np. C
+______________________________________________________________________
+Michał Olejko
+gr 2ID21B
+______________________________________________________________________
+Co zostało zrealizowane na ten etap?
+
+1. Zgłębiono wiedzę na temat projektu zaczęrpniętą z literatury 
+zawartej na platformie moodle
+(A.-T. Schreiner, "Object - oriented Programming with ANSI - C”, 1993)
+oraz z poniższych źródeł internetowych:
+
+1.1. 
+https://stackoverflow.com/questions/1114349/struct-inheritance-in-c
+zaczerpnięto z powyższego: http://www.deleveld.dds.nl/inherit.htm
+
+Jednakże jest to rozwiązanie zbliżone do obecnego, z tym że przy użyciu
+słowa kluczowego #define definiowany jest pewnego rodzaju konstruktor.
+Wciąż jednak jest to definiowanie struktury w strukturze, a nie
+rozszerzanie funkcjonalności czy pól 'klasy' bazowej.
+
+1.2 
+http://www.bolthole.com/OO-C-2.html
+
+Podobnie do powyższego (1.1.), tutaj w strukturze definiowane są dwie 
+unie, gdzie jedna jest unią zawierającą 'klasę' nadrzędną, a druga 
+zawiera pola klasy dziedziczącej. Struktura jest tutaj pewnego rodzaju 
+opakowaniem dla całości.
+
+1.3
+https://pl.wikibooks.org/wiki/C/Typy_z%C5%82o%C5%BCone
+w szczególności fragment:
+struct adres_bajtowy {
+  __uint8_t a;
+  __uint8_t b;
+  __uint8_t c;
+  __uint8_t d;
+  };
+ 
+ union adres {
+   __uint32_t ip;
+   struct adres_bajtowy badres;
+   };
+ 
+ int main ()
+ {
+    union adres addr;
+    addr.badres.a = 192;
+    addr.badres.b = 168;
+    addr.badres.c = 1;
+    addr.badres.d = 1;
+    printf ("Adres IP w postaci 32-bitowej zmiennej: %08x\n",addr.ip);
+    return 0;
+ }
+
+Przykład ten pomaga zrozumieć działanie unii, lecz jak opisano:
+
+Dlaczego jedynki są na początku zmiennej, skoro w programie 
+były to dwa ostatnie bajty (pola c i d struktury)? Jest to problem 
+kolejności bajtów. Aby dowiedzieć się o nim więcej przeczytaj rozdział 
+przenośność programów. Zauważyłeś zatem, że za pomocą tego programu 
+w prosty sposób zamieniliśmy cztery zmienne jednobajtowe w jedną 
+czterobajtową. Jest to tylko jedno z możliwych zastosowań unii.
+
+widnieje tu problem kolejności bajtów w unii. Dopiero na kolejny
+etap podjęte zostaną próby rozszerzenia danej unii o kolejne pola, tak
+aby osiągnąć prawdziwe dziedziczenie.
+
+2. Bazując na powyższych materiałach stworzono prototyp obsługi zdarzeń.
+
+______________________________________________________________________
+Co będzie realizowane na kolejny etap?
+
+Na kolejny etap podjęte zostaną próby stworzenia, a następnie 
+rozszerzenia/dziedziczenia klasy zbudowanej tym razem na podstawie 
+unii, a nie struktury oraz rozszerzona zostanie 'teoria' do projektu.
+
+
+
+ 

@@ -1,0 +1,17 @@
+1. Emulacja programowania obiektowego w językach nieobiektowych np. C
+______________________________________________________________________
+Michał Olejko
+gr 2ID21B
+______________________________________________________________________
+Co zostało zrealizowane na ten etap?
+
+1. Stworzono prostą hermetyzację metod - metody publiczne i prywatne, w
+oparciu o programownaie modularne (podział na pliki .h oraz .c, gdzie
+w pliku nagłówkowym .h deklarujemy zmienne, a w pliku źródłowym .c ich 
+definicja.
+
+______________________________________________________________________
+Co będzie realizowane na kolejny etap?
+
+W kolejnym etapie zostaną kontynuowane prace nad hermetyzacją metod i 
+zmiennych. 
