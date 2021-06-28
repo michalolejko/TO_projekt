@@ -1,7 +1,6 @@
 #include "Czlowiek.h"
 #include <stdlib.h>
 
-
 //public
 Czlowiek* Czlowiek_cstr(char* imie, unsigned int wiek){
     struct Czlowiek* inst = malloc(sizeof*inst);

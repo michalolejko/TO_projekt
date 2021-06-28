@@ -6,7 +6,7 @@
 #include "Pracownik.c"
 #include "AbstractTest.c"
 
-//PRZECI¥¯ENIE-----------------------------------------------------------------
+//PRZECIAZENIE-----------------------------------------------------------------
 int addi(int a, int b) {
     return a + b;
 }
@@ -48,7 +48,7 @@ int main()
     //protected
     student->setPesel(987643210);
     printf("pesel: %ld\n", (unsigned long)czlowiek->getPesel());
-    printf("student %d roku, %s, lat %d\n", student->rok, (char*)student->getImie((Czlowiek*)student), student->wiek);
+    printf("student %d roku, %s, lat %d\n", student->rok,(char*)student->getImie((Czlowiek*)student), student->wiek);
     free(student);
     printf("____________________________________________________\n");
 

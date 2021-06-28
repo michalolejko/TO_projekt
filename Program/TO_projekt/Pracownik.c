@@ -18,3 +18,4 @@ char* Pracownik_getImie(struct Pracownik *inst)
     printf("[OVERRIDED] ");
     return inst->imie;
 }
+
