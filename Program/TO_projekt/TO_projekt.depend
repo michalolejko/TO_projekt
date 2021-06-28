@@ -39,21 +39,22 @@
 
 1616952898 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to_projekt\point.h
 
-1624812245 source:c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\main.c
+1624888518 source:c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"Czlowiek.h"
 	"Student.c"
 	"Pracownik.c"
+	"AbstractTest.c"
 
 1624808584 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\czlowiek.c
 	"Czlowiek.h"
 	<stdlib.h>
 
-1624811713 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\czlowiek.h
+1624888790 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\czlowiek.h
 
-1624809976 source:c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\czlowiek.c
+1624888790 source:c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\czlowiek.c
 	"Czlowiek.h"
 	<stdlib.h>
 
@@ -65,7 +66,15 @@
 
 1624812270 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\pracownik.h
 
-1624812303 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\pracownik.c
+1624887630 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\pracownik.c
 	"Czlowiek.h"
 	"Pracownik.h"
+
+1624887688 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\abstracttest.c
+	"Abstract.h"
+	"AbstractTest.h"
+
+1624887198 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\abstract.h
+
+1624887630 c:\users\micha許desktop\studia\zapiski - praca\pi靖ek\technologie obiektowe\to projekt (git)\program\to_projekt\abstracttest.h
 

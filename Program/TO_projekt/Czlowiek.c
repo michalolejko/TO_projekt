@@ -11,10 +11,9 @@ Czlowiek* Czlowiek_cstr(char* imie, unsigned int wiek){
     inst->getImie = czlowiek_getImie;
     inst->setPesel = czlowiek_setPesel;
     inst->getPesel = czlowiek_getPesel;
+
     return inst;
 }
-
-
 
 //public
 unsigned long czlowiek_getPesel()
@@ -33,3 +32,5 @@ char* czlowiek_getImie(struct Czlowiek *inst)
 {
     return inst->imie;
 }
+
+

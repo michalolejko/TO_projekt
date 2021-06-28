@@ -4,6 +4,7 @@
 #include "Czlowiek.h"
 #include "Student.c"
 #include "Pracownik.c"
+#include "AbstractTest.c"
 
 //PRZECI¥¯ENIE-----------------------------------------------------------------
 int addi(int a, int b) {
@@ -71,6 +72,22 @@ int main()
 
     //-----------------------------------------------------------------------------
 
+    //uzycie metody i klasy abstrakcyjnej:
+    AbstractTest *at = (AbstractTest*)AbstractTest_cstr();
+    at->abstractMethod();
+    free(at);
 
+    //-----------------------------------------------------------------------------
+
+   /*Czlowiek *czlowiek1 = (Czlowiek*)Czlowiek_cstr("czlowiek1", 1);
+    Czlowiek *czlowiek2 = (Czlowiek*)Czlowiek_cstr("czlowiek2", 2);
+    czlowiek1->staticTest = 10;
+    czlowiek2->staticTest = 20;
+    printf("\nczlowiek1->staticTest = %d,", czlowiek1->staticTest);
+    printf("\nczlowiek2->staticTest = %d,\n", czlowiek2->staticTest);
+    free(czlowiek1);
+    free(czlowiek2);*/
+
+    //-----------------------------------------------------------------------------
     return 0;
 }

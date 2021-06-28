@@ -9,7 +9,7 @@ Pracownik* Pracownik_cstr(char* imie, unsigned int wynagrodzenie){
     return inst;
 }
 
-//public (przes³oniêcie - OVERRIDE):
+//public (przesloniêcie - OVERRIDE):
 #ifdef Pracownik
 #define getImie(x) Pracownik_getImie(x)
 #endif
